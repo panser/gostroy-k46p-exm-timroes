@@ -17,7 +17,13 @@ define(function(require) {
             icon: 'fa-clock-o', // the class of the font awesome icon for this
             description: 'Add a digital clock to your dashboards.', // description shown to the user
             requiresSearch: false, // Cannot be linked to a search
-            template: require('plugins/gostroy_k_46_p_exm_timroes/clock.html') // Load the template of the visualization
+            template: require('plugins/gostroy_k_46_p_exm_timroes/clock.html'), // Load the template of the visualization
+            params: {
+              editor: require('plugins/gostroy_k_46_p_exm_timroes/clock-editor.html'), // Use this HTML as an options editor for this vis
+              defaults: { // Set default values for paramters (that can be configured in the editor)
+                format: 'HH:mm:ss'
+              }
+            }
         });
     }
 
