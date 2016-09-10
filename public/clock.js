@@ -29,3 +29,12 @@ define(function(require) {
     // want to also return the provider.
     return ClockProvider;
 });
+
+var module = require('ui/modules').get('gostroy_k_46_p_exm_timroes');
+module.controller('ClockController', function($scope, $timeout) {
+  var setTime = function() {
+    $scope.time = Date.now();
+    $timeout(setTime, 1000);
+  };
+  setTime();
+});
