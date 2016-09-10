@@ -1,0 +1,6 @@
+{
+  "name": "gostroy_k_46_p_exm_timroes",
+  "version": "0.0.0",
+  "description": "example from https://www.timroes.de/2015/12/02/writing-kibana-4-plugins-basics/",
+  "main": "index.js"
+}
